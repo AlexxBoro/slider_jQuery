@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+
+<body onload="changeSlide()">
+    <h1>type a number and click Check</h1>
+    <input type="text" id="input" />
+    <input type="submit" value="Check" onclick="checkNumber()" />
+    <div id="result"></div>
+
+    <h1>type two numbers and click Submit</h1>
+    <input type="text" id="numA" />
+    <input type="text" id="numB" />
+    <input type="submit" value="Submit" onclick="printArr()" />
+    <div id="array"></div>
+
+    <h1>slider</h1>
+    <span onclick="pickSlide(1)">[1]</span>
+    <span onclick="pickSlide(2)">[2]</span>
+    <span onclick="pickSlide(3)">[3]</span>
+    <span onclick="pickSlide(4)">[4]</span>
+    <span onclick="pickSlide(5)">[5]</span>
+    <div id="slider" class="slides"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+
+</html>
